@@ -4,11 +4,11 @@
 
   function superbowlWin(record) {
      
-    return record.find( (element) => 
+    const found = record.find( (element) => 
     element.result === "W"
         
     )
- 
+     return found.year
     
     }
   
