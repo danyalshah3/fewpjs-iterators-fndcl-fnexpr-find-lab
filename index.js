@@ -5,13 +5,17 @@
   function superbowlWin(record) {
      
     const found = record.find( (element) => 
-    element.result === "W"
-        
+     element.result === "W" 
+         
+    
     )
-     return found.year
+    if (found){
+        return found.year
+    }
+    else 
+    return found
     
     }
-  
     
 //   function superbowlWin(record){
 //    record.find(record.result === "W")
